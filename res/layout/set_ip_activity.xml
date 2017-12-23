@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/set_ip_top"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/abc_ab_stacked_transparent_light_holo" >
+        <ImageView
+	        android:id="@+id/btn_set_back"
+	        android:layout_width="40dp"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="3.0dip"
+	        android:layout_marginRight="8.0dip"
+	        android:layout_marginTop="3.0dip"
+	        android:gravity="center"
+	        android:src="@drawable/btn_backb"/> 
+	<ImageView
+	        android:id="@+id/set_ok"
+	        android:layout_width="40dp"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="3.0dip"
+	        android:layout_marginRight="5.0dip"
+	        android:layout_marginTop="3.0dip"
+	        android:layout_alignParentRight="true"
+	        android:src="@drawable/writeicon_comment"/> 
+	 
+
+
+	    <TextView
+	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:ellipsize="end"
+	        android:gravity="center"
+	        android:layout_toLeftOf="@id/set_ok"
+	        android:layout_toRightOf="@id/btn_set_back"
+	        android:paddingLeft="5.0dip"
+	        android:paddingRight="5.0dip"
+			android:text="设置服务器IP"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="20sp" />
+	    
+	   
+        
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/set_ip_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/set_ip_top"
+        android:background="#ffffff" >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"
+	        
+	        >
+	        <EditText 
+	            android:layout_marginTop="20dp"
+	            android:layout_width="match_parent"
+	            android:layout_height="47dp"
+	            android:id="@+id/setIp_text"
+	            android:hint="请在此处输入IP"
+	            />
+	        
+	        
+	        
+	    </LinearLayout>
+        
+	 </RelativeLayout>
+
+</RelativeLayout>

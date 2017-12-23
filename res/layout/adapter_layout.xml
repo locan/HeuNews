@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="center_horizontal"
+    
+    >
+	 <ImageView  
+	     android:layout_width="100dp"
+	     android:layout_height="80dp"
+	     android:id="@+id/image"
+	     android:layout_marginTop="15dp"
+	     android:layout_marginLeft="5dp"
+	     android:layout_marginRight="5dp"
+	     /> 
+	 <TextView 
+	     android:id="@+id/title"  
+	     android:layout_width="match_parent"
+	     android:layout_height="50dp"
+	     android:text="Title"
+	     android:textSize="15sp"
+	     android:textStyle="bold"
+	     android:textColor="@color/black"
+	     android:layout_toRightOf="@id/image"
+	     android:layout_marginLeft="10dp"
+	     android:layout_marginTop="10dp"
+	     android:layout_marginRight="10dp"
+	     />
+		<TextView
+		    android:id="@+id/summary"
+		    android:layout_width="fill_parent"
+		    android:layout_height="20dp"
+		    android:text="summary"
+		    android:layout_below="@id/title"
+		    android:layout_toRightOf="@id/image"
+		    android:textSize="13sp"
+		    android:textColor="#5F605B"
+			android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_marginRight="10dp"
+		    />
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="17dp"
+		    android:layout_below="@id/summary"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginBottom="10dp"
+		    android:layout_toRightOf="@id/image"
+		    >
+
+		<TextView 
+		    android:id="@+id/ncomment"
+		    android:layout_width="40dp"
+		    android:layout_height="17dp"
+		    android:textSize="13sp"
+		    android:drawableLeft="@drawable/comm_icon"
+		    android:drawablePadding="3dp"
+	
+		      android:layout_alignParentRight="true"
+		    android:gravity="center_vertical"
+		    android:layout_marginRight="10dp"
+		    
+		    />
+		<TextView 
+		    android:id="@+id/nsourse"
+		    android:layout_width="100dp"
+		    android:layout_height="20dp"
+		    android:text="来源"
+		    android:textSize="12sp"
+			android:textColor="#5F605B"
+		    android:layout_toLeftOf="@id/ncomment"
+		    android:layout_marginRight="50dp"
+		    
+		    />
+
+		
+	
+		</RelativeLayout>
+</RelativeLayout>

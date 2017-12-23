@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+     >
+
+	<ImageView
+	    android:id="@+id/wximage"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:adjustViewBounds="true"
+	    android:paddingBottom="20dp"
+	    android:paddingLeft="10dp"
+	    android:paddingTop="20dp" />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:layout_gravity="center"
+	    android:id="@+id/wxtext"
+	    />
+
+</LinearLayout>

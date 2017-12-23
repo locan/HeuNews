@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <news.heu.view.SlidingMenuView
+        android:id="@+id/main_menu_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="240dip"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/bitmap_book_read_chapterlist_repeat"
+	    android:orientation="vertical" 
+	    android:id="@+id/main_left_menu"
+	    >
+	    <TextView
+	        android:layout_width="240dip"
+	        android:layout_height="28.0dip"
+	        android:background="#ff313131"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="15.0dip"
+	        android:text="菜单栏"
+	        android:textColor="#ff959595"
+	        android:textSize="14.0sp" />
+	<Button
+	        android:id="@+id/personinfor"
+	        android:layout_width="240dip"
+	        android:layout_height="50.0dip"
+	        android:background="@drawable/selector_category_item"
+	        android:clickable="true"
+	        android:drawableLeft="@drawable/default_round_head"
+	        android:drawablePadding="1.0dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="15.0dip"
+	        android:paddingRight="10.0dip"
+	        android:text="用户"
+	        android:textColor="#ff959595"
+	        
+	        android:textSize="16.0sp" />
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" 
+        />
+    <Button
+	        android:id="@+id/personcollect"
+	        android:layout_width="240dip"
+	        android:layout_height="50.0dip"
+	        android:background="@drawable/selector_category_item"
+	        android:clickable="true"
+	        android:drawableLeft="@drawable/ic_drawer_favorite_normal"
+	        android:drawablePadding="1.0dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="15.0dip"
+	        android:paddingRight="10.0dip"
+	        android:text="我的收藏"
+	        android:textColor="#ff959595"
+	        
+	        android:textSize="16.0sp" />
+    
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" 
+        />
+	 	  <Button
+	        android:id="@+id/shake"
+	        android:layout_width="240dip"
+	        android:layout_height="50.0dip"
+	        android:background="@drawable/selector_category_item"
+	        android:clickable="true"
+	        android:drawableLeft="@drawable/shake"
+	        android:drawablePadding="1.0dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="15.0dip"
+	        android:paddingRight="10.0dip"
+	        android:text="摇一摇"
+	        android:textColor="#ff959595"
+	        android:textSize="16.0sp" />
+    
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" 
+        />
+	     <Button
+	        android:id="@+id/btn_homepage"
+	        android:layout_width="240dip"
+	        android:layout_height="50.0dip"
+	        android:background="@drawable/selector_category_item"
+	        android:clickable="true"
+	        android:drawableLeft="@drawable/ic_day_mode_pressed_night"
+	        android:drawablePadding="1.0dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="15.0dip"
+	        android:paddingRight="10.0dip"
+	        android:text="返回主页"
+	        android:textColor="#ff959595"
+	        android:textSize="16.0sp" />
+	    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" 
+        />
+	   
+	       
+ 
+	    
+	    <TextView
+	        android:id="@+id/tocategory"
+	        android:layout_width="240dip"
+	        android:layout_height="28.0dip"
+	        android:background="#ff313131"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="15.0dip"
+	        android:text="分类"
+	        android:textColor="#ff959595"
+	        android:textSize="14.0sp" />
+	    <View
+	        android:layout_width="240dip"
+	        android:layout_height="2.0dip"
+	        android:background="@drawable/ic_shelf_category_divider" />
+	  <LinearLayout 
+	     	android:layout_width="240dip"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+	   <Button
+    	android:id="@+id/category1"
+        android:layout_width="119dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_category_mark"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:textColor="#ff959595"
+        android:textSize="16.0sp" 
+        android:text = "category1"
+        />
+ 
+	    <Button
+    	android:id="@+id/category2"
+        android:layout_width="119dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_category_mark"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:textColor="#ff959595"
+        android:textSize="16.0sp" 
+        android:text = "category2"
+        />
+	  </LinearLayout>
+	   <LinearLayout 
+	     	android:layout_width="240dip"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+	   <Button
+    	android:id="@+id/category3"
+        android:layout_width="119dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_category_mark"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:textColor="#ff959595"
+        android:textSize="16.0sp" 
+        android:text = "category3"
+        />
+	   
+	     <Button
+    	android:id="@+id/category4"
+        android:layout_width="119dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_category_mark"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:textColor="#ff959595"
+        android:textSize="16.0sp" 
+        android:text = "category4"
+        />
+	  </LinearLayout>
+  
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" 
+        />
+    <TextView
+	        android:layout_width="240dip"
+	        android:layout_height="28.0dip"
+	        android:background="#ff313131"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="15.0dip"
+	        android:text="系统"
+	        android:textColor="#ff959595"
+	        android:textSize="14.0sp" />
+   <Button
+	        android:id="@+id/btn_set"
+	        android:layout_width="240dip"
+	        android:layout_height="50.0dip"
+	        android:background="@drawable/selector_category_item"
+	        android:clickable="true"
+	        android:drawableLeft="@drawable/selector_setting_item"
+	        android:drawablePadding="1.0dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="15.0dip"
+	        android:paddingRight="10.0dip"
+	        android:text="系统设置"
+	        android:textColor="#ff959595"
+	        android:textSize="16.0sp" />
+	    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" 
+        />
+  <Button
+	        android:id="@+id/btn_exit"
+	        android:layout_width="240dip"
+	        android:layout_height="50.0dip"
+	        android:background="@drawable/selector_category_item"
+	        android:clickable="true"
+	        android:drawableLeft="@drawable/abc_ic_clear_normal"
+	        android:drawablePadding="1.0dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="15.0dip"
+	        android:paddingRight="10.0dip"
+	        android:text="退出应用"
+	        android:textColor="#ff959595"
+	        android:textSize="16.0sp" />
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" 
+        />
+    	
+
+
+</LinearLayout>
+        
+
+       <FrameLayout
+            android:id="@+id/main_body"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+          
+        </FrameLayout> 
+    </news.heu.view.SlidingMenuView>
+
+</RelativeLayout>

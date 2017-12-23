@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/webtop"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:focusable="true"  
+        android:focusableInTouchMode="true"
+        android:background="@drawable/abc_ab_stacked_transparent_light_holo" >
+        <ImageView
+	        android:id="@+id/btn_web_back"
+	        android:layout_width="40dp"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="3.0dip"
+	        android:layout_marginRight="8.0dip"
+	        android:layout_marginTop="3.0dip"
+	        android:gravity="center"
+	        android:src="@drawable/btn_backb"/> 
+	
+	 
+	 <ImageView
+	        android:id="@+id/btn_web_share"
+	        android:layout_width="40dp"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="3.0dip"
+	        android:layout_marginRight="5.0dip"
+	        android:layout_marginTop="3.0dip"
+	        android:layout_alignParentRight="true"
+	        
+	        android:src="@drawable/noticeable_weixin_pressed_night"/> 
+
+	    <EditText
+	        android:id="@+id/web_input"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        
+	        android:ellipsize="end"
+	        android:gravity="center"
+	        android:layout_toLeftOf="@id/btn_web_share"
+	        android:layout_toRightOf="@id/btn_web_back"
+	        android:paddingLeft="5.0dip"
+	        android:paddingRight="5.0dip"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="12sp" />
+	   
+        
+    </RelativeLayout>
+
+   
+   <RelativeLayout 
+            android:id="@+id/webbomm"
+            android:layout_width="fill_parent"
+        	android:layout_height="42dp"
+        	android:layout_alignParentBottom="true"
+        	android:background="@drawable/abc_ab_stacked_transparent_light_holo"
+            >
+            <Button 
+                android:id="@+id/tocomment"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/night_base_send"
+                android:layout_marginRight="5dp"
+                
+                />
+            <EditText 
+                android:drawableLeft="@drawable/biz_tie_comment_reply_write"
+                android:layout_height="42dp"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@id/tocomment"
+                android:id="@+id/writecomment"
+                android:hint="写评论 "
+                />
+            
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/webcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/webtop"
+        android:layout_above="@id/webbomm"
+        android:background="#ffffff" >
+       
+            
+            </RelativeLayout>
+   <RelativeLayout 
+        android:id="@+id/webbottom"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:layout_marginBottom="70dp"
+       android:layout_alignParentBottom="true"
+    
+        >
+         <Button 
+            android:layout_width="50dp"
+        	android:layout_height="50dp"
+        	android:id="@+id/collectss"
+        	android:layout_centerVertical="true"
+        	android:background="@drawable/collect_no"
+        	android:layout_alignParentRight="true"
+             />   
+        <Button 
+            android:layout_below="@id/collectss"
+            android:layout_width="50dp"
+        	android:layout_height="50dp"
+        	android:id="@+id/readss"
+        	android:layout_centerVertical="true"
+        	android:background="@drawable/speaker_icon"
+        	android:layout_alignParentRight="true"
+            />
+        
+        
+    </RelativeLayout>
+ 
+
+</RelativeLayout>
